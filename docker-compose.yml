@@ -148,8 +148,8 @@ services:
 
   mirror-makerA:
     image: confluentinc/cp-kafka
-    hostname: mirror-maker
-    container_name: mirror-maker
+    hostname: mirror-makerA
+    container_name: mirror-makerA
     volumes:
       - ./mm2_config:/tmp/kafka/config
     ports:
@@ -175,8 +175,8 @@ services:
 
   mirror-makerB:
     image: confluentinc/cp-kafka
-    hostname: mirror-maker
-    container_name: mirror-maker
+    hostname: mirror-makerB
+    container_name: mirror-makerB
     volumes:
       - ./mm2_config:/tmp/kafka/config
     ports:
