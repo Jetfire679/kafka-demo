@@ -153,7 +153,7 @@ services:
     volumes:
       - ./mm2_config:/tmp/kafka/config
     ports:
-      - 9091:9091
+      - 9090:9090
       - 29096:29096
     depends_on:
       - zookeeperA
@@ -180,7 +180,7 @@ services:
     volumes:
       - ./mm2_config:/tmp/kafka/config
     ports:
-      - 9092:9092
+      - 9091:9091
       - 29097:29097
     depends_on:
       - zookeeperA
